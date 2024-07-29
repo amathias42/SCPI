@@ -7,7 +7,7 @@ This Python script can read in plain text files containing a list of SCPI comman
 ## Setup
 
 - Download & install python - preferably the version in `version.txt` - [Python Download](https://www.python.org/downloads/)
-- (Optional) create a venv for the project directory - [Python venv docs](https://docs.python.org/3/library/venv.html)
+- (Optional) create a venv for the project directory - (`python -m venv venv`) [Python venv docs](https://docs.python.org/3/library/venv.html)
 - Command Line: `pip install -r requirements.txt`
 
 ## Usage
