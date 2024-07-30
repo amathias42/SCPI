@@ -16,7 +16,8 @@ def openOnlyIntsrument(baud_rate, write_termination="\r\n", read_termination=Non
 
 
 def getCommandListFromFile(fileName):
-    """reads in plain text file of SCPI commands each on their own line"""
+    """reads in plain text file of SCPI commands each on their own line.
+    Comments are allowed - designated by '#'"""
     with open(fileName, mode="r", encoding="utf-8") as cmdFile:
         lineList = cmdFile.read().splitlines()
         for i, line in enumerate(lineList):
