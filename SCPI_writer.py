@@ -18,7 +18,12 @@ def openOnlyIntsrument(baud_rate, write_termination="\r\n", read_termination=Non
 def getCommandListFromFile(fileName):
     """reads in plain text file of SCPI commands each on their own line"""
     with open(fileName, mode="r", encoding="utf-8") as cmdFile:
-        return cmdFile.read().splitlines()
+        lineList = cmdFile.read().splitlines()
+        for i, line in enumerate(lineList):
+            if line.find("#") != -1:
+                lineList[i] = line[: line.find("#")].strip()
+
+    return lineList
 
 
 def sendCommandList(instrument, cmdList):

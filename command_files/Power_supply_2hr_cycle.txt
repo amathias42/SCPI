@@ -1,14 +1,14 @@
-PROG 1
-PROG:CLE
-PROG:REP 1000
-PROG:TOTA 2
-PROG:STEP 1
-PROG:STEP:CURR 0.01
-PROG:STEP:VOLT 5
-PROG:STEP:ONT 300
-PROG:STEP 2
-PROG:STEP:CURR 2
-PROG:STEP:VOLT 700
-PROG:STEP:ONT 7200
-PROG:NEXT 0
-PROG:SAV
+PROG 1 # program number
+PROG:CLE # clear the program memory
+PROG:REP 1000 # repeat the program 1000 times after the initial run through
+PROG:TOTA 2 # We have 2 steps
+PROG:STEP 1 # Select step 1 to edit
+PROG:STEP:CURR 0.01 # Set the current limit to 0.01A (min value)
+PROG:STEP:VOLT 5 # Set the supply voltage to 5V (min value)
+PROG:STEP:ONT 300 # Turn on the supply at these settings for 300s (5 min)
+PROG:STEP 2 # Selcet step 2 to edit
+PROG:STEP:CURR 2 # Set the current limit to 2A
+PROG:STEP:VOLT 700 # Set the supply voltage to 700V
+PROG:STEP:ONT 7200 # Turn on the supply at these settings for 7200s (2 hr)
+PROG:NEXT 0 # Next program to run (0 = end)
+PROG:SAV # Save the program to memory

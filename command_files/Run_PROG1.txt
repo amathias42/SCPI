@@ -1,2 +1,2 @@
-PROG 1
-PROG:RUN ON
+PROG 1 # Select program 1
+PROG:RUN ON # Run the program
