@@ -9,7 +9,7 @@ def openOnlyIntsrument(baud_rate, write_termination="\r\n", read_termination=Non
     rm = pyvisa.ResourceManager("@py")
     return rm.open_resource(
         rm.list_resources()[0],
-        baud_rate=baud_rate,
+        baud_rate=int(baud_rate),
         write_termination=write_termination,
         read_termination=read_termination,
     )
