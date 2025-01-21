@@ -1,7 +1,7 @@
 from time import sleep
 import pyvisa  # type: ignore pylint: disable=import-error
 import argparse
-import tk_file_select as tkf  # type: ignore pylint: disable=import-error wrong-import-position
+import tk_file_select as tkf  # type: ignore pylint: disable=import-error
 
 
 def openOnlyIntsrument(baud_rate, write_termination="\r\n", read_termination=None):
